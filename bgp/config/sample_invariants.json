@@ -1,0 +1,37 @@
+{
+  "samples": 80267,
+  "columns": [
+    "sample_timestamp",
+    "prefix",
+    "collector",
+    "episode_id",
+    "split",
+    "target_change_30",
+    "target_change_120",
+    "next_change_timestamp",
+    "remote_collector",
+    "peer_as",
+    "current_route_present",
+    "current_path_length",
+    "current_path_bucket",
+    "current_origin",
+    "current_community_count",
+    "time_sin",
+    "time_cos",
+    "latest_local_type",
+    "latest_local_age",
+    "latest_local_changed",
+    "lag_local_events_30",
+    "lag_local_events_120",
+    "lag_local_announcements_120",
+    "lag_local_withdrawals_120"
+  ],
+  "sort_keys": [
+    "sample_timestamp",
+    "prefix",
+    "collector",
+    "episode_id"
+  ],
+  "serialization": "pandas.to_csv(index=False, float_format=\"%.17g\", lineterminator=\"\\n\")",
+  "canonical_csv_sha256": "b0f33b217a54f9839798118c2560766ee9589b851ff5c220a640be01c2405542"
+}

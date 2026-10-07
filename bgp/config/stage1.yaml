@@ -1,0 +1,12 @@
+stage: stage1
+start_utc: "2025-07-06T00:00:00+00:00"
+end_utc: "2025-07-07T00:00:00+00:00"
+collectors:
+  - route-views.chile
+  - rrc06
+prefix_count_min: 50
+prefix_count_max: 200
+train_fraction: 0.60
+validation_fraction: 0.20
+test_fraction: 0.20
+episode_gap_seconds: 300

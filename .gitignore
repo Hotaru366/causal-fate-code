@@ -1,0 +1,56 @@
+# Local environments and caches
+.venv*/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.DS_Store
+# Runtime input/output directories are never release content
+**/outputs/
+**/data/
+**/raw/
+**/downloads/
+**/results/
+**/reports/
+**/tmp/
+# Raw archives, processed observations, and model weights
+*.gz
+*.bz2
+*.zip
+*.tar
+*.xz
+*.parquet
+*.arrow
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.part
+# Manuscript files and rendered artifacts
+paper/
+manuscript/
+*.tex
+*.bib
+*.cls
+*.bst
+*.pdf
+*.docx
+*.aux
+*.bbl
+*.blg
+*.log
+*.png
+*.jpg
+*.svg
+# Secrets
+.env
+.env.*
+*.pem
+*.key

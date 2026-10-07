@@ -1,0 +1,31 @@
+stage: stage0
+start_utc: "2025-07-06T00:00:00+00:00"
+end_utc: "2025-07-06T02:00:00+00:00"
+collectors:
+  - name: route-views.chile
+    provider: RouteViews
+    base_url: "https://archive.routeviews.org/route-views.chile/bgpdata/2025.07"
+    rib_name: "rib.20250706.0000.bz2"
+    rib_subdir: RIBS
+    update_minutes: 15
+    update_extension: bz2
+  - name: rrc06
+    provider: RIPE RIS
+    base_url: "https://data.ris.ripe.net/rrc06/2025.07"
+    rib_name: "bview.20250706.0000.gz"
+    rib_subdir: ""
+    update_minutes: 5
+    update_extension: gz
+selection:
+  maximum_prefixes: 100
+  minimum_active_prefixes: 20
+  minimum_cross_collector_prefixes: 5
+  minimum_replayed_episodes: 20
+  episode_gap_seconds: 300
+limits:
+  compressed_download_bytes: 10000000000
+  candidate_data_bytes: 25000000000
+  repository_candidate_data_bytes: 30000000000
+  dataframe_bytes: 4000000000
+  target_rss_bytes: 8000000000
+  hard_rss_bytes: 10000000000
