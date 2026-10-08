@@ -74,8 +74,9 @@ model or a dataset. Full experiment runs are separate from the unit tests.
 
 ## Scope and release status
 
-This is a local preparation repository. No remote or publication workflow is
-configured. The code license for a future public release has not yet been
+This repository is being prepared for submission and is hosted privately at
+[Hotaru366/causal-fate-code](https://github.com/Hotaru366/causal-fate-code).
+It has not been publicly released, and no publication workflow is configured. The code license for a future public release has not yet been
 selected. This preparation does not grant rights to redistribute third-party
 inputs.
 
