@@ -1,0 +1,8 @@
+numpy==2.0.2
+scipy==1.13.1
+pandas==2.3.3
+h5py==3.14.0
+jax==0.4.30
+jaxlib==0.4.30
+openpyxl==3.1.5
+pytest==8.4.2

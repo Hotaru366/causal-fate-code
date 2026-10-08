@@ -1,0 +1,166 @@
+{
+  "config": {
+    "biophysical_fixed": {
+      "capacitance": 1.0,
+      "chemical_normalization": "incoming_row_sum_log1p",
+      "exc_reversal_mV": 0.0,
+      "gap_normalization": "incoming_row_sum_log1p",
+      "inh_reversal_mV": -70.0,
+      "neutral_reversal_mV": -35.0,
+      "resting_potential_mV": -35.0,
+      "synapse_decay_rate": 1.0,
+      "synapse_rise_rate": 2.0
+    },
+    "calibration": {
+      "objective_weights": {
+        "leading_mode_loss": 0.15,
+        "pearson_loss": 0.45,
+        "relative_error": 1.0,
+        "sign_loss": 0.15
+      },
+      "readout_gain_mode": "nonnegative_node_local_ridge",
+      "readout_ridge": 0.02
+    },
+    "causal_fate_transport": {
+      "block_sparsity_average_neuron_fraction_threshold": 0.8,
+      "block_sparsity_conditional_fraction_threshold": 0.8,
+      "block_threshold_quantiles": [
+        0.0,
+        0.5,
+        0.75,
+        0.9
+      ],
+      "event_threshold_quantiles": [
+        0.0,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99
+      ],
+      "jvp_clip_norm": 50.0,
+      "selection_rule": "supported_lowest_active_ratio",
+      "state_weight_synapse_scale": 0.05,
+      "state_weight_voltage_scale_mV": 5.0,
+      "support_max_source_degradation": 0.08,
+      "support_max_vs_continuous_error": 0.16,
+      "support_min_leading_mode": 0.85,
+      "support_min_pearson_fraction_of_continuous": 0.85,
+      "support_min_sign_agreement": 0.55,
+      "support_min_spearman_fraction_of_continuous": 0.85,
+      "support_min_strongest_10pct_fraction_of_continuous": 0.85,
+      "whole_event_threshold_quantiles": [
+        0.0,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99
+      ]
+    },
+    "continuous_grid": {
+      "g_chem": [
+        0.03,
+        0.07,
+        0.14
+      ],
+      "g_gap": [
+        0.02,
+        0.06,
+        0.12
+      ],
+      "g_leak": [
+        0.7,
+        1.0
+      ],
+      "k_slope": [
+        4.0
+      ],
+      "stimulus_amplitude": [
+        0.6,
+        1.0
+      ],
+      "v_half": [
+        -26.0
+      ]
+    },
+    "kernel_window": {
+      "candidate_windows_s": [
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        30.0
+      ],
+      "max_abs_kernel_value": 20.0,
+      "max_time_s": 30.0,
+      "observation_operator": "signed_mean",
+      "time_step_s": 0.05
+    },
+    "official_repo_commit": "b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+    "official_repo_url": "https://github.com/francescorandi/wormneuroatlas.git",
+    "seed": 188,
+    "simulation": {
+      "correction_decision_interval_s": 0.5,
+      "correction_decision_steps": 5,
+      "decision_interval_sensitivity_steps": [
+        1,
+        5,
+        10
+      ],
+      "dt": 0.1,
+      "legacy_base_config_integrator": "explicit_euler",
+      "production_integrator": "rk4",
+      "observation_window_steps": 100,
+      "readout_feature": "window_signed_mean_voltage",
+      "response_start_step": 0,
+      "selected_observation_window_s": 10.0,
+      "steps": 300,
+      "stimulus_steps": 4
+    },
+    "source_response_transform": "tanh_95pct_abs_offdiag",
+    "strain": "wt"
+  },
+  "public_sources": {
+    "anatomical_connectome_sources": [
+      "White et al. 1986",
+      "Witvliet et al. 2021"
+    ],
+    "chemical_sign_source": "Fenyves et al. 2020",
+    "signal_propagation_atlas": "Randi et al. Nature 2023",
+    "worm_neuro_atlas_commit": "b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+    "worm_neuro_atlas_repo": "https://github.com/francescorandi/wormneuroatlas.git"
+  },
+  "readout": {
+    "coefficient_count": 188,
+    "definition": "response-neuron-local nonnegative scalar ridge readout applied to time-averaged membrane-voltage response above rest; no intercept",
+    "evaluation_interpretation": "The 118/50 stimulus split evaluates realization-policy transfer across stimulus subsets; it is not an out-of-sample test of the continuous substrate or readout.",
+    "feature": "trapezoidal mean of v_i(t)-v_rest over the selected observation window",
+    "fitted_on": "full frozen high-confidence empirical propagation object before realization operating-point selection",
+    "intercept": 0.0,
+    "legacy_file_naming_note": "Files retain validation/test names for compatibility; the split is used for realization operating-point selection and stimulus-stratified evaluation.",
+    "ridge": 0.02,
+    "sample_mask": "main_high_confidence_mask over formal observed stimulus-response pairs"
+  },
+  "schema_version": "celegans_v4_frozen_operating_object_v1",
+  "selected_causal_fate_seed": {
+    "correction_decision_interval_s": 0.5,
+    "lambda0": 0.41964693155815835
+  },
+  "selected_continuous_parameters": {
+    "capacitance": 1.0,
+    "g_chem": 0.14,
+    "g_gap": 0.02,
+    "g_leak": 0.7,
+    "k_slope": 4.0,
+    "resting_potential": -35.0,
+    "stimulus_amplitude": 1.0,
+    "synapse_decay_rate": 1.0,
+    "synapse_rise_rate": 2.0,
+    "v_half": -26.0
+  }
+}

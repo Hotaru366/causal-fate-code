@@ -28,6 +28,10 @@ __pycache__/
 *.bin
 *.h5
 *.hdf5
+*.xlsx
+*.xls
+*.mat
+*.mrt
 *.npy
 *.npz
 *.pkl

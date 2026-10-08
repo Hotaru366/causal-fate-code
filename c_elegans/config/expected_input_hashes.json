@@ -1,0 +1,18 @@
+{
+  "all_observed_valid_kernel_mask.npy": "207648234cc48b1dd51364665192037438405069fe6500febfd6157c0aab0a67",
+  "chemical_adjacency.npy": "ea381b5119b96ec76995cd975750ec7f3ac859852cfed7ee5e2fdbcef3fe6f04",
+  "chemical_reversal.npy": "7219701e31d43404e0d5c3354f782e7a2e7b216e715bed2867e067c527938408",
+  "data_provenance.json": "e0a58e24eeab87adad5fd89cfbf7542895b01259b75ddbd9a23d1c50bd54e58f",
+  "empirical_30s_propagation_matrix.npy": "a29b5f67120c8588f7f19e59e694cd8e94de43713a57e58cf8bfc613a87ebfbf",
+  "empirical_30s_raw_dff.npy": "322a0efbde2c06a5891611f71877250cb52fce85217078ab1be31af2ce4f965e",
+  "empirical_propagation_matrix.npy": "89c4ca118c8f9ccecedfb16a640d8da78f16a2335b86297db37c49a4e5565f1e",
+  "empirical_q.npy": "b3d067754bb175e4ca98983be9aad1fc3abe530d48fa43642210cb8f1cea15cf",
+  "empirical_raw_dff.npy": "8b62041e907e16025837795d110d83c467b92f2ec5d6aac1d3d2c1e02acd7a89",
+  "gap_junction_adjacency.npy": "fb2759411b393351459ec13550e3b121a516de6f58e16e0c24f86a106b53d3e5",
+  "main_high_confidence_mask.npy": "f8b6c3a895ad50a8f62a8c6a128a4fdcd8a09846a6a31807cde180ef6472ebf0",
+  "neuron_ids.txt": "3d4d1c303d68146eaff4f00ac4e698c3289abb0a2124f84934124866f1dc8d53",
+  "observed_pair_mask.npy": "de299defc5044903175fbd05e593c2554c4f9af738dd393a846fe80cc88d5e48",
+  "occurrence_matrix.npy": "3b6fb4edd7aaed9e75c58806ca534e755b1472eed424ff7bc98c42d78da56d85",
+  "q10_mask.npy": "f7792469daa176d5c6ee170f285044bdbf0421558229b02537ec5a65cdaa0fb8",
+  "valid_kernel_mask.npy": "f88c95b4009263d8837f2c1ca3985a40eacc54f0251290e36b39e2e189b0143f"
+}
