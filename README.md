@@ -1,5 +1,11 @@
 # Causal-fate dynamics: C. elegans, BGP and Transformer code
 
+This is the official source-code repository accompanying the arXiv preprint
+**[Causal-fate dynamics of unrealized influence](https://arxiv.org/abs/2610.11422)**
+by **Yiwei Liu, Luwei Yang and Shunbo Lei** (2026).
+
+[arXiv:2610.11422](https://arxiv.org/abs/2610.11422) · [Paper PDF](https://arxiv.org/pdf/2610.11422)
+
 This repository contains three standalone implementations, ordered by their evidential role:
 
 - [`c_elegans/`](c_elegans/README.md): a connectome-constrained neural model motivating a scientific hypothesis about unresolved inter-neuronal influence.
@@ -86,3 +92,19 @@ or deployment acceleration. Realization-policy selection precedes evaluation in 
 neural study, substrate calibration and readout fitting use the full empirical
 object; its stimulus split evaluates the realization policy, not independent
 neural-model generalization.
+
+## Citation
+
+If you use this code or build on the study, please cite the preprint:
+
+```bibtex
+@misc{liu2026causalfate,
+  title         = {Causal-fate dynamics of unrealized influence},
+  author        = {Yiwei Liu and Luwei Yang and Shunbo Lei},
+  year          = {2026},
+  eprint        = {2610.11422},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.SY},
+  url           = {https://arxiv.org/abs/2610.11422}
+}
+```
